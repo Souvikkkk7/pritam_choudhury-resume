@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+<script src="{% static 'js/popper.js' %}"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #074f3f;">
+  <a class="navbar-brand" href="{% url 'resume:base'%}">HOME</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+         <a class="nav-link" href="{% url 'resume:gallery' %}">Gallery<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item disabled">
+        <a class="nav-link" href="{% url 'resume:certificates' %}">Certificates</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+<div class="jumbotron">
+    <h2>This is my Certificate Section.</h2>
+    <h4><em>I have a lot. I listed a few of them.</em></h4>
+</div>
+
+
+    <div class="row row-cols-1 row-cols-md-2">
+       <div class="col mb-4">
+           <div class="card-header" style="background-color:#70b6c4"><strong>IEEE</strong></div>
+    <div class="card" id="six">
+      <a href="{% static 'cert/6.jpg' %}"><img src="{% static 'cert/6.jpg' %}" class="card-img-top" alt="..."></a>
+      <!--<div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div> -->
+    </div>
+  </div>
+ <div class="col mb-4" id="three">
+     <div class="card-header" style="background-color:#70b6c4"><strong>NIIT</strong></div>
+    <div class="card">
+      <a href="{% static 'cert/3.jpg' %}"><img src="{% static 'cert/3.jpg' %}" class="card-img-top" alt="..."></a>
+     <!-- <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div> -->
+    </div>
+  </div>
+ <div class="col mb-4">
+     <div class="card-header" style="background-color:#70b6c4"><strong>MyWBUT EXORSA</strong></div>
+    <div class="card" id="one">
+      <a href="{% static 'cert/5.jpg' %}"><img src="{% static 'cert/5.jpg' %}" class="card-img-top" alt="..."></a>
+      <!--<div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div> -->
+    </div>
+  </div>
+
+        <div class="col mb-4">
+     <div class="card-header" style="background-color:#70b6c4"><strong>NPTEL</strong></div>
+    <div class="card" id="four">
+      <a href="{% static 'cert/4.jpg' %}"><img src="{% static 'cert/4.jpg' %}" class="card-img-top" alt="..."></a>
+      <!--<div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div> -->
+    </div>
+  </div>
+
+    </div>
+
+
+
+
+
+</div>
+<style>
+
+body{
+background-color:#ded9d5;
+}
+    .card-header{
+    border-top:2px solid black;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    }
+.card{
+border:2px solid black;
+}
+</style>
+
+</body>
+</html>

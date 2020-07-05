@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pritam Choudhury</title>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+<script src="{% static 'js/popper.js' %}"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0c386b;">
+  <a class="navbar-brand" href="#">WELCOME</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'resume:gallery' %}">Gallery<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'resume:certificates' %}">Certificates</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<div class="container">
+	<div class="jumbotron">
+
+<div class="row no-gutters">
+<div class="card mb-3" id="hot" style="max-width: 715px;">
+  <div class="row no-gutters">
+     <div class="col-md-4">
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/pritamtwo.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/pritamone.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/pritam.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    </div>
+    <div class="col-md-8" id="one">
+       <div class="card-header"><h1 id="name1">Pritam Choudhury</h1></div>
+      <div class="card-body">
+        <h3>CAREER OBJECTIVE</h3>
+        <p class="card-text"> Upcoming B.Tech Graduate in Information Technology, intend to learn and master new technologies and build a career with a leading corporate company , with committed and dedicated people who will encourage me to explore myself fully and realize my potential.</p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+ <div id="two" class="card text-white bg-info mb-3">
+  <div id="career" class="card-header"><h3><strong>Contact Details</strong></h3></div>
+  <div class="card-body"><h5>Address :</h5>
+   <!-- <h5 class="card-title"></h5> -->
+      <ul>
+    <p>Subho-Shakti Apartment,213 Kalpukur Road, Nabapally,
+      Barasat,Kol-700126</p>
+  </ul>
+
+</div>
+
+    <ul class="social-links" id="social">
+      <li id="li1"><a data-container="body" data-toggle="popover" data-placement="top" data-content="Mob & Whatsapp No: 8777468341"><img class="social" src="{% static 'images/call.png' %}"></a></li>
+      <li id="li2"><div class="btn-group"> <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="social" src="{% static 'images/gmail2.png' %}"></a><div class="dropdown-menu"><a class="dropdown-item" href="https://mail.google.com/">pritam98choudhury@gmail.com</a></div></div></li>
+      <li id="li3"><a href="https://www.facebook.com/profile.php?id=100009376690782&sk=about_details"><img class="social" src="{% static 'images/facebook.png' %}"></a></li>
+      <li id="li4"><a data-container="body" data-toggle="popover" data-placement="top" data-content="Telegram No: 8777468341"><img class="social" src="{% static 'images/telegram.png' %}"></a></li>
+
+    </ul>
+
+</div>
+  </div>
+</div>
+
+</div>
+    </div>
+</div>
+
+<div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <div id="title1" class="card-header"><h6><strong>ACADEMIC RECORDS</strong></h6></div>
+      <div class="card-body">
+        <ol>
+          <li><strong>Graduation (B.Tech in INFORMATION TECHNOLOGY)</strong></li>
+          <ul>
+            <li>College : Haldia Institute of Technology HIT</li>
+            <li>Board/University : Maulana Abul Kalam Azad University of Technology(MAKAUT)</li>
+            <li>Year of Passing	 : 2021</li>
+            <li>Percentage   :86% till 5th Semester</li>
+          </ul>
+          <li><strong>12th (Science)</strong></li>
+          <ul>
+            <li>School	: Kalyani Central Model School</li>
+            <li>Board/University	: CBSE</li>
+	        <li> Year of Passing	: 2017</li>
+	        <li>Percentage		: 75%</li>
+          </ul>
+          <li><strong>10th (Science)</strong></li>
+          <ul>
+            <li>College/School		: Julien Day School , Kalyani</li>
+                <li>Board/University	: ICSE</li>
+            <li>Year of Passing		: 2015</li>
+              <li>Percentage		: 83.6%</li>
+          </ul>
+        </ol>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4" >
+    <div class="card" id="tech">
+      <div id="" class="card-header"><h6><strong>TECHNICAL QUALIFICATION AND CERTIFICATIONS</strong></h6></div>
+      <div class="card-body">
+        <ol>
+          <li>Programming Language	: <strong>C,Python</strong></li>
+          <li>Working Environment	: <strong>Windows,Linux</strong></li>
+          <li>Databases			: <strong>SQL</strong></li>
+        </ol>
+        <ul>
+          <li>Successfully completed "Programming,Data Structure and algorithm in Python " course from NPTE</li>
+          <li>Successfully completed "Data Structure and Algorithms in C programming" course from NIIT with excellent performance.
+</li>
+        </ul>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+       <div class="card-header"><h6><strong>VOLUNTEERING AND CO CURRICULAR ACHIEVEMENTS</strong></h6></div>
+
+      <div class="card-body">
+        <ol>
+          <li>Member of organizing committee for Independence cup football tournament and annual cultural meets  college.</li>
+          <li>Participated in  Inter house cricket and football tournament in school also active player in my department football team, representing my department football team as Vice Captain.</li>
+          <li>Successfully completed diploma in drawing.</li>
+          <li>Received Certificate of Merit in computer science in school (Class 7)</li>
+        </ol>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+           <div class="col mb-4" id="personal">
+    <div class="card">
+       <div class="card-header"><h6><strong>PROJECT WORKS</strong></h6></div>
+
+      <div class="card-body">
+        <ul>
+          <li>Built a Spaceship game called “Space Invader” in python using pygames.</li>
+          <p></p>
+          <a type="button" class="btn btn-outline-success" href="https://github.com/smith11-p11/Space-Invader/tree/master/Space%20Invader"><strong>Link to this project</strong></a>
+          <p></p>
+          <li>Build a live dashboard called “COVID-19 Dashboard” in Tableau which gives updates on the various counts regarding Corona virus cases in the world wide and necessary graphs and maps for clear information.</li>
+          <p></p>
+          <a type="button" class="btn btn-outline-info" href="https://public.tableau.com/profile/pritam.choudhury#!/vizhome/Covid-19DashboardUpdatedPritam/Covid-19DashboardUpdated"><strong>Link to the Dashboard</strong></a>
+        </ul>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+          <div class="col mb-4" id="dec">
+    <div class="card">
+       <div class="card-header"><h6><strong>DECLARATION</strong></h6></div>
+
+      <div class="card-body">
+        <p class="card-text">I hereby declare that the information furnished above is true to the best of my knowledge.</p>
+        <p></p>
+        <p> </p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4" id="hello">
+    <div  class="card">
+      <div class="card-header"><h6><strong>PERSONAL PROFILE</strong></h6></div>
+      <div class="card-body">
+        <ol>
+          <li>Name			:	PRITAM CHOUDHURY</li>
+          <li>Father’s Name		:	PRASANTA CHOUDHURY</li>
+           <li>Father’s occupation	:	Goverment Service</li>
+          <li>D.O.B.			:	05.11.1998</li>
+          <li>Sex			:	Male</li>
+          <li>Language Known   	:	English, Hindi, Bengali</li>
+          <li>Hobbies		             :             Playing  Football,Travelling in train,Photography</li>
+        </ol>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<style>
+.social-links, #li1, #li2, #li3, #li4{
+list-style-type:none;
+display:inline-block;
+}
+.social{
+width:30px;
+height;30px;
+}
+#name1{
+color:black;
+}
+
+#proimg{
+border:4px solid  #0c386b;
+}
+
+#two{
+border:4px solid green;
+max-width:18rem;
+margin:0px 20px 50rem;
+}
+
+#hot{
+border:4px solid  #0c386b;
+}
+#career{
+background_color:#17e37d;
+}
+
+  #tech{
+
+  }
+  #personal{
+margin:-192px 0px;
+  }
+#hello{
+margin:-115px 0px;
+}
+dec{
+margin:0px -20px;
+}
+
+</style>
+
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
+
+
+</body>
+</html>
